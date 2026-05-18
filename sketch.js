@@ -7,7 +7,7 @@
 function preload() {
   // loadImage() takes a file path relative to index.html
   // The image is stored in the variable so we can use it later
-  map = loadImage("assets/images/metro-map.png");
+  map = loadImage("assets/images/metro-map.png"); // [1]
 }
 
 // ------------------------------------------------------------
