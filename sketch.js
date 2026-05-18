@@ -1,11 +1,3 @@
-// ============================================================
-// Week 1 Example 1: Images and Shapes
-// ============================================================
-
-// Variables declared outside of setup() and draw() are
-// accessible everywhere in the sketch (global scope).
-let controllerImg;
-
 // ------------------------------------------------------------
 // preload()
 // Runs once before setup(). Always load images and sounds here
@@ -15,7 +7,6 @@ let controllerImg;
 function preload() {
   // loadImage() takes a file path relative to index.html
   // The image is stored in the variable so we can use it later
-  controllerImg = loadImage("assets/images/controller.png");
   map = loadImage("assets/images/metro-map.png");
 }
 
@@ -61,10 +52,8 @@ function setup() {
   image(map, width / 2, height / 2, width - 100, height - 60);
 
   // ----------------------------------------------------------
-  // SECTION 3: DRAWING SHAPES (a controller made of shapes!)
+  // SECTION 3: DRAWING SHAPES
   // ----------------------------------------------------------
-  // All shapes are drawn relative to an origin point (originX, originY)
-  // so the whole drawing can be moved by changing those two values.
 
   let circleX = width / 5;
   let circleY = height / 2;
@@ -77,42 +66,4 @@ function setup() {
   fill(255);
   ellipse(circleX, circleY, 60, 60);
   ellipse(circleX, circleY + 90, 60, 60);
-}
-
-// ------------------------------------------------------------
-// draw()
-// Runs repeatedly in a loop after setup() finishes.
-// Anything you want to animate or update goes here.
-// This sketch has nothing to animate, so draw() is empty.
-// ------------------------------------------------------------
-function draw() {
-  // Nothing here for now — everything is drawn once in setup()
-}
-
-// ------------------------------------------------------------
-// mousePressed()
-// A built-in p5.js event function.
-// Automatically called once every time the mouse is clicked.
-// mouseX and mouseY hold the current mouse position.
-// ------------------------------------------------------------
-function mousePressed() {
-  // Draw a random-coloured circle wherever the user clicks
-  fill(random(255), random(255), random(255));
-  noStroke();
-  circle(mouseX, mouseY, 40);
-}
-
-// ------------------------------------------------------------
-// keyPressed()
-// A built-in p5.js event function.
-// Automatically called once every time a key is pressed.
-// The key variable holds the character that was pressed.
-// ------------------------------------------------------------
-function keyPressed() {
-  // Press "k" to log the current mouse position to the Chrome console.
-  // This is a handy debug tool — use it to find coordinates when
-  // placing shapes or images on the canvas.
-  if (key === "k") {
-    console.log("Mouse X:", mouseX, "Mouse Y:", mouseY);
-  }
 }
