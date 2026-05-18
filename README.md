@@ -12,10 +12,8 @@ This is a static image and contains no interactions.
 
 ## Assets
 
-| File                           | Source                                                         |
-| ------------------------------ | -------------------------------------------------------------- |
-| `assets/images/controller.png` | Drawn by Karen Cochrane                                        |
-| `assets/images/metro-map.png`  | Sourced from https://www.tokyometro.jp/en/subwaymap/index.html |
+| File | Source |
+|`assets/images/metro-map.png`| Sourced from https://www.tokyometro.jp/en/subwaymap/index.html |
 
 ## References
 
