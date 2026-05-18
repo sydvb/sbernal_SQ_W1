@@ -41,18 +41,13 @@ function setup() {
   // Three numbers = red, green, blue (each 0–255)
   fill(255, 255, 255); // white
 
-  // textAlign() controls how text is anchored to its x position
-  // CENTER means the x coordinate is the middle of the text
-  textAlign(CENTER);
-
   // textSize can be changed at any point — it applies to text drawn after it
-  textSize(14);
+  textSize(32);
 
   // width and height are built-in p5.js variables that
   // always hold the canvas width and height
-  fill(180);
-  text("Image loaded from assets/images/", width / 4, 65);
-  text("Drawn using p5.js shapes", (width / 4) * 3, 65);
+  fill(0);
+  text("Explore the never-ending city.", width / 4, height / 3);
 
   // ----------------------------------------------------------
   // SECTION 2: DISPLAYING AN IMAGE
@@ -62,6 +57,7 @@ function setup() {
   // x and y are the TOP-LEFT corner of the image
   // The last two arguments resize the image to fit that space
   image(controllerImg, 50, 85, 300, 300);
+  image(map, 400, 85, 300, 300);
 
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES (a controller made of shapes!)
